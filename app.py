@@ -35,6 +35,17 @@ from src.llm.gemini_client import ask_gemini
 from reports.pdf_exporter import export_pdf
 from audit.audit_logger import log_action
 
+import spacy
+from spacy.util import is_package
+import subprocess
+import sys
+
+if not is_package("en_core_web_sm"):
+    subprocess.run([sys.executable, "-m", "spacy", "download", "en_core_web_sm"])
+
+nlp = spacy.load("en_core_web_sm")
+
+
 st.set_page_config(page_title="Contract Analysis & Risk Assessment Bot", layout="wide")
 st.title("📄 Contract Analysis & Risk Assessment Bot")
 st.write("Upload a **contract** to analyze risks, compliance, and SME impact.")
@@ -168,3 +179,4 @@ if uploaded_file:
         open(pdf_path, "rb"),
         file_name="contract_analysis_report.pdf"
     )
+
