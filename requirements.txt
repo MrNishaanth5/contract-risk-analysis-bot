@@ -1,13 +1,14 @@
-streamlit
+streamlit==1.30.0
 google-generativeai
 langid
-spacy
-en-core-web-sm
+spacy==3.6.1
+en-core-web-sm==3.6.0
 nltk
 pdfplumber
 python-docx
 reportlab
 scikit-learn
 langdetect
+
 
 
