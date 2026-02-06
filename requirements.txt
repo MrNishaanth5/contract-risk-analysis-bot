@@ -1,5 +1,6 @@
 streamlit
 google-generativeai
+langid
 spacy
 nltk
 pdfplumber
@@ -7,3 +8,4 @@ python-docx
 reportlab
 scikit-learn
 langdetect
+
