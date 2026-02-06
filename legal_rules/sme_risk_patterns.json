@@ -1,0 +1,16 @@
+{
+  "unilateral_termination": {
+    "pattern": "may terminate at any time without cause",
+    "risk": "HIGH",
+    "reason": "Creates power imbalance against SME"
+  },
+  "payment_delay": {
+    "pattern": "payment within 90 days",
+    "risk": "HIGH",
+    "reason": "Unfavorable cash-flow impact"
+  },
+  "auto_renewal": {
+    "pattern": "automatically renew",
+    "risk": "MEDIUM"
+  }
+}

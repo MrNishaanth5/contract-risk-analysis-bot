@@ -1,0 +1,9 @@
+streamlit
+google-generativeai
+spacy
+nltk
+pdfplumber
+python-docx
+reportlab
+scikit-learn
+langdetect

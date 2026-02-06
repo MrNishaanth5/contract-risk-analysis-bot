@@ -1,0 +1,18 @@
+{
+  "jurisdiction": {
+    "allowed": ["India"],
+    "risk_if_missing": "HIGH"
+  },
+  "arbitration": {
+    "recommended_city": ["Chennai", "Mumbai", "Delhi", "Bangalore"],
+    "risk_foreign_seat": "HIGH"
+  },
+  "notice_period": {
+    "minimum_days": 30,
+    "risk_if_less": "MEDIUM"
+  },
+  "non_compete": {
+    "employment": "HIGH_RISK",
+    "post_termination": "VERY_HIGH_RISK"
+  }
+}
