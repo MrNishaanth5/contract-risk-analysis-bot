@@ -1,7 +1,8 @@
 import spacy
 import re
+import en_core_web_sm
 
-nlp=spacy.load("en_core_web_sm")
+nlp = en_core_web_sm.load()
 
 def extract_spacy_entities(text):
     doc = nlp(text)
@@ -43,3 +44,4 @@ def extract_entities(text):
     }
 
     return entities
+
