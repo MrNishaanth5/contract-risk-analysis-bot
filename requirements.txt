@@ -2,10 +2,12 @@ streamlit
 google-generativeai
 langid
 spacy
+en-core-web-sm
 nltk
 pdfplumber
 python-docx
 reportlab
 scikit-learn
 langdetect
+
 
