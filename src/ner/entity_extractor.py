@@ -1,8 +1,13 @@
-import spacy
 import re
-import en_core_web_sm
+import spacy
+from spacy.util import is_package
+import subprocess
+import sys
 
-nlp = en_core_web_sm.load()
+if not is_package("en_core_web_sm"):
+    subprocess.run([sys.executable, "-m", "spacy", "download", "en_core_web_sm"])
+
+nlp = spacy.load("en_core_web_sm")
 
 def extract_spacy_entities(text):
     doc = nlp(text)
@@ -44,4 +49,5 @@ def extract_entities(text):
     }
 
     return entities
+
 
