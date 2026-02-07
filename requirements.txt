@@ -2,9 +2,11 @@ streamlit==1.30.0
 google-generativeai
 langid
 spacy==3.6.1
+blis==0.7.9
 nltk
 pdfplumber
 python-docx
 reportlab
 scikit-learn
 langdetect
+
